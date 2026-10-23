@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "updated_date": "2026-10-23",
-  "status": "source_published_license_scope_pending_vlp_not_submitted_not_scored",
+  "status": "first_vlp_submission_officially_scored_license_scope_pending",
   "team_name": "望远队",
   "registration_confirmed": true,
   "links": {
@@ -22,7 +22,7 @@
     {
       "name": "VLSOT result ZIP",
       "local_candidate": "01_prior_candidate/result.zip",
-      "status": "local_format_valid_unscored",
+      "status": "first_official_submission_processed_and_scored",
       "format": "result/<six_digit_id>.txt;10 clips x30 rows; frame l w h x y z"
     },
     {
@@ -81,8 +81,15 @@
     "correct_padding_mask": true,
     "temporal_residual": true,
     "postprocess": "initial_range_and_dimensions",
-    "official_platform_score": null,
-    "formal_vlp_result_submission_completed": false,
+    "official_platform_score": {
+      "SR@0.5": 0.3333,
+      "SR@0.7": 0.0,
+      "AOR": 7.475,
+      "PR@1.0": 0.6667,
+      "ACE": 4.0801,
+      "PR@0.5": 0.0
+    },
+    "formal_vlp_result_submission_completed": true,
     "physical_coordinate_semantics_independently_verified": false
   },
   "internal_metrics_not_official": {
@@ -104,11 +111,29 @@
     "exact_senior_scope_record_pending": true,
     "upstream_main_framework_clearance_complete": false
   },
-  "before_platform_submit": [
-    "verify output coordinate convention against task/organizer clarification",
-    "use exactly one chosen result ZIP",
-    "fill real code/model URLs only after accessible publication",
-    "keep <=5 slide report evidence current",
-    "retain submission ID/time/versions/actual returned score"
+  "first_official_submission": {
+    "method_id": 298,
+    "method_url": "http://vlp.chd.edu.cn/tasks/method/298",
+    "short_name": "Wangyuan-VLSOT",
+    "submissions_count": 1,
+    "submission_date_display": "2026-10-23 12:02",
+    "submission_date_timezone": null,
+    "official_metrics_display": {
+      "SR@0.5": "0.3333",
+      "SR@0.7": "0.0000",
+      "AOR": "7.4750",
+      "PR@1.0": "0.6667",
+      "ACE": "4.0801",
+      "PR@0.5": "0.0000"
+    },
+    "result_sha256": "5319e74f3f7fdfed6545a7ff55bcc77d86342b013bb959c48eaf2da6bf64abd9",
+    "declared_code_snapshot_commit": "585326470f367189533869c18dbdd039917738cc",
+    "full_competition_material_review_confirmed": false
+  },
+  "after_first_platform_submit": [
+    "retain first submission receipt, exact result hash and six official metrics",
+    "improve accuracy using genuine official feedback without relabeling internal metrics",
+    "keep model share validity, public report and repository accessible",
+    "complete project-wide license scope records and verify remaining competition review requirements"
   ]
 }

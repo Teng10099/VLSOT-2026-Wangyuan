@@ -218,6 +218,15 @@
   "public_code_repository_url": "https://github.com/Teng10099/VLSOT-2026-Wangyuan",
   "source_publication_status": "published_project_wide_license_basis_pending",
   "first_public_source_commit": "dbe4a1b701842360da987aa493ea88d6d253f6f6",
-  "formal_vlp_result_submission_completed": false,
-  "official_platform_score": null
+  "formal_vlp_result_submission_completed": true,
+  "official_platform_score": {
+    "SR@0.5": 0.3333,
+    "SR@0.7": 0.0,
+    "AOR": 7.475,
+    "PR@1.0": 0.6667,
+    "ACE": 4.0801,
+    "PR@0.5": 0.0
+  },
+  "official_method_url": "http://vlp.chd.edu.cn/tasks/method/298",
+  "competition_material_review_confirmed": false
 }

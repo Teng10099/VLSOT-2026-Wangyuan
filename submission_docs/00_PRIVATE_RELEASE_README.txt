@@ -1,9 +1,9 @@
 VLSOT 完整时序候选：已公开源码说明
 更新：2026-10-23；队伍：望远队（已完成报名）
 
-完整源码已公开：https://github.com/Teng10099/VLSOT-2026-Wangyuan；首次公开源码提交为dbe4a1b701842360da987aa493ea88d6d253f6f6，后续文档更新以Git历史为准。整仓许可证依据仍待补；尚未正式提交VLP评测，没有官方得分。配套模型包为望远队_VLSOT模型与ONNX.zip，团队提供的百度网盘链接和提取码已记录在README.md；百度分享页面已核验，显示过期时间“365天后”，满足至少90天的有效期要求；尚未独立完整下载或校验远端文件SHA256。模型包解压根VLSOT_Wangyuan，含portable_config.yaml及原model/ONNX；便携配置已重跑300帧与原始结果逐字节一致。无需私有run_manifest/resolved_config。结果见外部候选包，README.md 给出完整30帧验证、推理、数值先验和同版本ONNX命令。根 README.upstream.md 保留已有基线来源；README.legacy_pipeline.md 说明旧入口不能混用。
+完整源码已公开：https://github.com/Teng10099/VLSOT-2026-Wangyuan；首次公开源码提交为dbe4a1b701842360da987aa493ea88d6d253f6f6，后续文档更新以Git历史为准。整仓许可证依据仍待补；首版结果已提交并完成官方评测；方法298，页面日期2026-10-23 12:02（未标时区）。六项官方成绩见README和提交清单。配套模型包为望远队_VLSOT模型与ONNX.zip，团队提供的百度网盘链接和提取码已记录在README.md；百度分享页面已核验，显示过期时间“365天后”，满足至少90天的有效期要求；尚未独立完整下载或校验远端文件SHA256。模型包解压根VLSOT_Wangyuan，含portable_config.yaml及原model/ONNX；便携配置已重跑300帧与原始结果逐字节一致。无需私有run_manifest/resolved_config。结果见外部候选包，README.md 给出完整30帧验证、推理、数值先验和同版本ONNX命令。根 README.upstream.md 保留已有基线来源；README.legacy_pipeline.md 说明旧入口不能混用。
 
-对应候选为续训第2轮、camera_geometric_center_v2、1033 keys、960x544、seed444、padding-mask和temporal-residual均启用。内部42段x30帧原始中心欧氏误差10.7594m，初始距离/尺寸先验后6.3588m；尺寸MAE0.6409m/0.2292m。内部数值不是官方APE/ACE/SR、榜单分数或对物理坐标解释的证明。当前平台坐标解释尚待核实，无官方成绩。
+对应候选为续训第2轮、camera_geometric_center_v2、1033 keys、960x544、seed444、padding-mask和temporal-residual均启用。内部42段x30帧原始中心欧氏误差10.7594m，初始距离/尺寸先验后6.3588m；尺寸MAE0.6409m/0.2292m。内部数值不是官方APE/ACE/SR、榜单分数或对物理坐标解释的证明。当前平台坐标解释尚待核实；首次官方成绩已另外记录，不能用内部对照替代。
 
 必要四类材料：VLSOT结果ZIP、公共GitHub/Gitee代码URL、<=20GB且至少90天可下载的模型链接/提取码（PyTorch同附ONNX）、<=5页PPT含方法/创新/实验/真实消融。本地包不能替代外部链接与平台提交。报名截止10月25日不等于最终提交时限；最终提交/冻结日期未核实。
 
