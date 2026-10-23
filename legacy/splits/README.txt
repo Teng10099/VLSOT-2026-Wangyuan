@@ -1,0 +1,1 @@
+Historical ID lists only. These 160/30 legacy lists are not the official 185/42 internal TRAIN split. They are retained for provenance and are not used by the current candidate commands. Do not use the legacy test list as official TEST labels. Current fixed lists are configs/official_split_20261023/train.txt and val.txt.

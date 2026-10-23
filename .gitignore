@@ -1,0 +1,45 @@
+# Local environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+# Credentials and personal connection configuration
+*.pem
+*.key
+id_rsa*
+.ssh/
+# Build products
+build/
+dist/
+*.egg-info/
+*.so
+*.dll
+*.o
+# Model binaries and generated predictions
+*.pth
+*.pt
+*.bin
+*.onnx
+*.onnx.data
+*.safetensors
+*.npz
+outputs/
+results/
+runs/
+logs/
+# Do not redistribute competition data or raw archives
+data/
+dataset/
+official_data_*/
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.jpg
+*.jpeg
+*.png
+*.mp4
+# Bundled third-party notices and fixed split IDs are intentional source text.

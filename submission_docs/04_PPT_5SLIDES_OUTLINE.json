@@ -1,0 +1,58 @@
+{
+  "status": "current_content_reference_only_not_a_PPT",
+  "team_name": "望远队",
+  "updated_date": "2026-10-23",
+  "maximum_slides": 5,
+  "official_score": null,
+  "slides": [
+    {
+      "page": 1,
+      "title": "任务、基线与当前候选",
+      "content": [
+        "VLSOT图像+语言三维跟踪",
+        "继承基线与本次工程贡献分开",
+        "完整30帧续训第2轮；当前未经官方评分"
+      ]
+    },
+    {
+      "page": 2,
+      "title": "监督、几何与时序",
+      "content": [
+        "camera_geometric_center_v2实验约定",
+        "padding-mask与temporal residual",
+        "段内状态传递，段间重置，TEST不读GT"
+      ]
+    },
+    {
+      "page": 3,
+      "title": "训练与独立验证",
+      "content": [
+        "TRAIN185/val42，原序列与共享帧隔离",
+        "前3帧5轮后full30两轮",
+        "历史初始化训练范围待查"
+      ]
+    },
+    {
+      "page": 4,
+      "title": "真实内部对照与描述先验",
+      "data": {
+        "first5_raw_m": 12.236,
+        "first5_prior_m": 6.5386,
+        "full30_raw_m": 10.7594,
+        "full30_prior_m": 6.3588,
+        "full30_dimension_mae_raw_m": 0.6409,
+        "full30_dimension_mae_prior_m": 0.2292
+      },
+      "note": "内部native欧氏均值，不能标为官方APE/ACE/SR；先验不是残差独立消融"
+    },
+    {
+      "page": 5,
+      "title": "部署、限制与材料",
+      "content": [
+        "同版本ONNX checker与ORT连续两步对齐通过",
+        "物理坐标/平台分数尚待核实",
+        "公共仓库已建立，源码待推送；主框架许可范围待补，师兄许可已确认"
+      ]
+    }
+  ]
+}

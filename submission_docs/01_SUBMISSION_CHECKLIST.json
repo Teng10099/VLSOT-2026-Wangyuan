@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "updated_date": "2026-10-23",
+  "status": "local_publication_commit_prepared_source_push_pending_not_scored",
+  "team_name": "望远队",
+  "registration_confirmed": true,
+  "links": {
+    "public_code_repository_url": "https://github.com/Teng10099/VLSOT-2026-Wangyuan",
+    "code_commit_or_tag": null,
+    "weights_share_url": "https://pan.baidu.com/s/1bVVBg2RImI3-x0BulhllCg?pwd=2qm4",
+    "weights_extraction_code": "2qm4",
+    "weights_share_expires_date": null
+  },
+  "required_categories": [
+    {
+      "name": "VLSOT result ZIP",
+      "local_candidate": "01_prior_candidate/result.zip",
+      "status": "local_format_valid_unscored",
+      "format": "result/<six_digit_id>.txt;10 clips x30 rows; frame l w h x y z"
+    },
+    {
+      "name": "public source repository",
+      "status": "public_repository_created_source_push_pending",
+      "required_hosts": [
+        "GitHub",
+        "Gitee"
+      ],
+      "required_license_choices": [
+        "MIT",
+        "Apache-2.0",
+        "BSD-3-Clause"
+      ],
+      "project_license_assigned": null,
+      "missing": "main-framework license scope and verified source publication commit"
+    },
+    {
+      "name": "weights share",
+      "status": "team_provided_share_link_recorded_expiry_and_remote_contents_unverified",
+      "max_size_gb": 20,
+      "minimum_availability_days": 90,
+      "must_include": [
+        "model.pth",
+        "portable_config.yaml",
+        "roberta-base/ four files",
+        "model_official_v2.onnx",
+        "verification/summary/share_manifest files"
+      ],
+      "missing": "expiry and remote file content verification",
+      "local_share_zip": "望远队_VLSOT模型与ONNX.zip",
+      "decompressed_root": "VLSOT_Wangyuan/",
+      "portable_config_full300_raw_result_byte_identical": true
+    },
+    {
+      "name": "technical report",
+      "max_slides": 5,
+      "must_cover": [
+        "method",
+        "contributions",
+        "measured experiments",
+        "ablation"
+      ],
+      "status": "separate local PPT; use current full30 evidence; do not regenerate with legacy tools/build_report.py"
+    }
+  ],
+  "candidate_contract": {
+    "epoch": 2,
+    "encoding": "camera_geometric_center_v2",
+    "state_keys": 1033,
+    "input_size_wh": [
+      960,
+      544
+    ],
+    "seed": 444,
+    "correct_padding_mask": true,
+    "temporal_residual": true,
+    "postprocess": "initial_range_and_dimensions",
+    "official_platform_score": null,
+    "physical_coordinate_semantics_independently_verified": false
+  },
+  "internal_metrics_not_official": {
+    "full30_val_clips": 42,
+    "frames_per_clip": 30,
+    "native_center_euclidean_mean_m": 10.7594,
+    "with_numeric_priors_native_center_euclidean_mean_m": 6.3588,
+    "dimensions_mae_m": 0.6409,
+    "with_numeric_priors_dimensions_mae_m": 0.2292
+  },
+  "dates": {
+    "registration_deadline_from_user_notice": "2026-10-25",
+    "final_result_submission_deadline": null,
+    "leaderboard_freeze_date": null,
+    "note": "Registration deadline does not establish final submission deadline."
+  },
+  "authorization": {
+    "senior_competition_source_publication_weights_permission_confirmed": true,
+    "exact_senior_scope_record_pending": true,
+    "upstream_main_framework_clearance_complete": false
+  },
+  "before_platform_submit": [
+    "verify output coordinate convention against task/organizer clarification",
+    "use exactly one chosen result ZIP",
+    "fill real code/model URLs only after accessible publication",
+    "keep <=5 slide report evidence current",
+    "retain submission ID/time/versions/actual returned score"
+  ]
+}

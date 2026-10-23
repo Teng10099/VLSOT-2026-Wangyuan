@@ -1,0 +1,219 @@
+{
+  "schema_version": 2,
+  "prepared_date": "2026-10-22",
+  "updated_date": "2026-10-23",
+  "scope": "源码来源与许可核查记录；组件归档只覆盖其授权范围，不是对整仓、数据、权重的授权。",
+  "overall_rights_clearance_complete": false,
+  "project_wide_license_assigned_by_this_document": null,
+  "sources": [
+    {
+      "name": "Mono3DVG",
+      "relationship": "继承 README 明示的原始项目；当前源码存在其模型/数据/辅助工具结构",
+      "url": "https://github.com/ZhanYang-nwpu/Mono3DVG",
+      "api_url": "https://api.github.com/repos/ZhanYang-nwpu/Mono3DVG",
+      "inspected_tree_sha": "0b54fabb14e52d62c0de9078c22f5e412ebbd676",
+      "recursive_tree_truncated": false,
+      "detected_repository_license": null,
+      "license_copying_notice_paths_found": [],
+      "readme_license_statement_found": false,
+      "local_evidence": [
+        "README.upstream.md",
+        "lib/models/mono3dvg/",
+        "lib/helpers/"
+      ],
+      "clearance_status": "unresolved",
+      "required_action": "确认实际采用版本及其许可，取得未明确授权部分允许公开、改编、再分发和按比赛允许许可证发布的授权；保留作者、论文与来源信息。",
+      "public_contact_from_upstream_readme": "zhanyangnwpu@gmail.com"
+    },
+    {
+      "name": "Mono3DVLT（比赛参考基线）",
+      "relationship": "附件二列为 VLSOT 参考基线；并不证明本地所有改动来自该仓库",
+      "url": "https://github.com/astudyber/Mono3DVLT",
+      "api_url": "https://api.github.com/repos/astudyber/Mono3DVLT",
+      "inspected_tree_sha": "6d5e0ab2c7fd7c4a4f0badc227e1945816ffb123",
+      "recursive_tree_truncated": false,
+      "detected_repository_license": null,
+      "license_copying_notice_paths_found": [],
+      "clearance_status": "unresolved_if_used",
+      "required_action": "确认实际采用部分及其权利人与师兄已确认授权的覆盖关系；仅对未覆盖部分补许可衔接，不重复索取已确认的参赛公开许可。",
+      "public_contact_from_upstream_readme": "hongkaiwei@chd.edu.cn"
+    },
+    {
+      "name": "师兄提供的源码与 checkpoint",
+      "relationship": "本地 original 目录和既有训练权重的直接来源，具体作者和权利人由团队填写",
+      "url": "",
+      "author_or_rights_holder": "",
+      "version_or_received_date": "",
+      "license": null,
+      "authorization_evidence_path": "",
+      "permission_to_use_in_competition": true,
+      "permission_to_modify": null,
+      "permission_to_publish_source": true,
+      "permission_to_redistribute_weights": true,
+      "user_confirmation_date": "2026-10-23",
+      "user_confirmation": "已确认允许，我补充授权范围",
+      "permission_to_use_competition_permitted_license": null,
+      "required_action": "已记录用户确认师兄允许参赛和公开；待补具体权利人、版本、权重及授权范围。上游独立权利与再许可范围仍须分别核对，不能将师兄已有训练和算法结构归为本次新增原创。"
+    },
+    {
+      "name": "MonoDETR",
+      "relationship": "继承 README 的 Acknowledgement/环境/预训练来源",
+      "url": "https://github.com/ZrrSkywalker/MonoDETR",
+      "license_url": "https://github.com/ZrrSkywalker/MonoDETR/blob/main/LICENSE.txt",
+      "detected_repository_license": "MIT",
+      "scope_note": "MIT 只支持其授权范围内的对应部分，不自动覆盖 Mono3DVG 或后续作者原创代码。",
+      "required_action": "确认实际采用版本；保留版权及 MIT 许可文本；单独核实对应预训练权重的许可与再分发条件。",
+      "archived_license": "third_party_licenses/MonoDETR-MIT.txt"
+    },
+    {
+      "name": "Deformable DETR",
+      "relationship": "本地文件头明确写明来源及 Apache 2.0",
+      "url": "https://github.com/fundamentalvision/Deformable-DETR",
+      "license": "Apache-2.0（本地对应文件头声明）",
+      "license_text_url": "https://www.apache.org/licenses/LICENSE-2.0",
+      "local_evidence": [
+        "lib/models/mono3dvg/backbone.py:2-7",
+        "lib/models/mono3dvg/position_encoding.py",
+        "lib/models/mono3dvg/ops/"
+      ],
+      "required_action": "对实际继承部分保留版权、许可和适用的 NOTICE；修改文件需标明改动；发布包包含许可文本。此声明不等于整仓均为 Apache 2.0。",
+      "license_url": "https://github.com/fundamentalvision/Deformable-DETR/blob/main/LICENSE",
+      "archived_license": "third_party_licenses/Deformable-DETR-Apache-2.0.txt"
+    },
+    {
+      "name": "DETR",
+      "relationship": "本地多个文件含 Facebook 版权及 Modified from DETR 注释",
+      "url": "https://github.com/facebookresearch/detr",
+      "license": "Apache-2.0",
+      "license_status": "verified_from_official_upstream",
+      "local_evidence": [
+        "lib/models/mono3dvg/backbone.py:6-7",
+        "lib/models/mono3dvg/matcher.py",
+        "utils/misc.py",
+        "utils/box_ops.py"
+      ],
+      "required_action": "保留对应版权、来源和适用许可；此许可仅覆盖其授权部分。",
+      "license_url": "https://github.com/facebookresearch/detr/blob/main/LICENSE",
+      "archived_license": "third_party_licenses/DETR-Apache-2.0.txt"
+    },
+    {
+      "name": "FlashAttention v2.3.6 rotary（Tri Dao）",
+      "relationship": "本地含Tri Dao版权的rotary结构与官方v2.3.6对应；修改过，非整文件逐字节同一",
+      "upstream_url": "https://github.com/Dao-AILab/flash-attention/blob/v2.3.6/flash_attn/ops/triton/rotary.py",
+      "license": "BSD-3-Clause",
+      "local_evidence": [
+        "lib/models/mono3dvg/mono3dvg_transformer.py:698",
+        "lib/models/mono3dvg/mono3dvg_difftransformer_ttm .py"
+      ],
+      "required_action": "对应继承部分保留Tri Dao版权、BSD条款及作者说明；此记录不为外围Mono3DVG/TTM代码授权。",
+      "license_url": "https://github.com/Dao-AILab/flash-attention/blob/v2.3.6/LICENSE",
+      "archived_license": "third_party_licenses/FlashAttention-v2.3.6-BSD-3-Clause.txt",
+      "archived_authors": "third_party_licenses/FlashAttention-v2.3.6-AUTHORS.txt"
+    },
+    {
+      "name": "Swin / RoBERTa / 其他预训练资源",
+      "relationship": "继承配置或模型加载使用的视觉/语言骨干与预训练文件",
+      "upstream_url": "",
+      "license": null,
+      "checkpoint_or_model_card_urls": [],
+      "local_evidence": [
+        "configs/mono3dvg.yaml",
+        "lib/models/mono3dvg/swin_backbone.py",
+        "lib/models/mono3dvg/mono3dvg.py"
+      ],
+      "required_action": "记录各文件的精确来源、版本、哈希、模型卡与权重许可；软件包代码许可不自动等同其所有模型权重许可。"
+    },
+    {
+      "name": "比赛数据",
+      "relationship": "比赛平台训练/验证/测试数据；不随源码公开",
+      "upstream_url": "http://vlp.chd.edu.cn/",
+      "attachment_declared_license": "CC BY-NC-SA 3.0",
+      "attachment_additional_conditions": [
+        "仅限本次比赛非商业使用",
+        "禁止二次分发"
+      ],
+      "redistribute_in_public_code_or_weights_bundle": false,
+      "required_action": "记录平台下载与使用说明，公开仓库只放准备脚本/路径说明，不放图像、标签或原始数据归档；样例展示另核实允许范围。"
+    },
+    {
+      "name": "CaDDN",
+      "relationship": "ddn_loss.py和balancer.py头注链接CaDDN官方实现",
+      "url": "https://github.com/TRAILab/CaDDN",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/TRAILab/CaDDN/blob/master/LICENSE",
+      "archived_license": "third_party_licenses/CaDDN-Apache-2.0.txt",
+      "local_evidence": [
+        "lib/models/mono3dvg/depth_predictor/ddn_loss/ddn_loss.py",
+        "lib/models/mono3dvg/depth_predictor/ddn_loss/balancer.py"
+      ],
+      "scope_note": "仅对应继承实现；不覆盖主框架。"
+    },
+    {
+      "name": "Microsoft UniLM / Diff-Transformer",
+      "relationship": "本地repeat_kv、lambda_init_fn和MultiheadDiffAttn结构对应官方实现，含本地改动",
+      "url": "https://github.com/microsoft/unilm/blob/master/Diff-Transformer/multihead_diffattn.py",
+      "license": "MIT",
+      "license_url": "https://github.com/microsoft/unilm/blob/master/LICENSE",
+      "archived_license": "third_party_licenses/UniLM-MIT.txt",
+      "scope_note": "官方根MIT，未见Diff-Transformer独立许可证；不为外围框架授权。"
+    },
+    {
+      "name": "Kornia focal loss / one_hot",
+      "relationship": "本地focalloss.py的文档与one_hot/focal结构与Kornia实现相符；头注同时指向zhezh/focalloss，实际继承链仍应补录",
+      "url": "https://github.com/kornia/kornia/blob/v0.6.11/kornia/losses/focal.py",
+      "additional_source_url": "https://github.com/kornia/kornia/blob/v0.6.11/kornia/utils/one_hot.py",
+      "license": "Apache-2.0 (Kornia version only)",
+      "license_url": "https://github.com/kornia/kornia/blob/v0.6.11/LICENSE",
+      "archived_license": "third_party_licenses/Kornia-v0.6.11-Apache-2.0.txt",
+      "local_evidence": [
+        "lib/models/mono3dvg/depth_predictor/ddn_loss/focalloss.py"
+      ],
+      "required_action": "补录实际采用版本/直接来源；不能因Kornia的许可而替未声明许可的zhezh仓库赋予Apache授权。"
+    },
+    {
+      "name": "zhezh/focalloss reference",
+      "relationship": "本地focalloss.py及Kornia原文件含based-on链接；不能只凭链接推断直接复制范围",
+      "url": "https://github.com/zhezh/focalloss/blob/master/focalloss.py",
+      "inspected_tree_sha": "0e6cde671b4543587472693604edc5ce42d43c5d",
+      "detected_repository_license": null,
+      "license_copying_notice_paths_found": [],
+      "required_action": "确认本地实际来源；若有独立采用其未明确授权代码，则补相应许可或以可确认授权的实现替换。当前未改算法。"
+    }
+  ],
+  "runtime_dependency_audit": {
+    "complete": false,
+    "existing_requirements_file": "requirements.txt",
+    "additional_imported_or_export_runtime_packages_to_pin_and_review": [
+      "torch",
+      "torchvision",
+      "timm",
+      "transformers",
+      "einops",
+      "numpy",
+      "Pillow",
+      "onnx",
+      "onnxruntime"
+    ],
+    "note": "应从实际成功运行环境记录版本并核实其许可证；这里只列待核对象，不为未知版本分配许可，也不声称依赖完整。",
+    "original_unpinned_requirements_packages": [
+      "pyyaml",
+      "scipy",
+      "opencv-python",
+      "numba",
+      "scikit-image",
+      "tqdm"
+    ],
+    "current_requirements_status": "已按实际运行环境锁定18项直接依赖；轮子/库本身不打包，完整依赖与模型权重许可另核。"
+  },
+  "references": [
+    {
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+      "purpose": "GitHub 说明无许可证时默认版权规则适用；公开可查看/fork 不等于开放修改和再分发许可。"
+    },
+    {
+      "url": "https://www.apache.org/licenses/LICENSE-2.0",
+      "purpose": "Apache 2.0 第4条的再分发、修改说明及版权/NOTICE保留条件。"
+    }
+  ],
+  "public_code_repository_url": "https://github.com/Teng10099/VLSOT-2026-Wangyuan"
+}

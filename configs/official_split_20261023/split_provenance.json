@@ -1,0 +1,18 @@
+{
+  "train_count": 185,
+  "validation_count": 42,
+  "validation_sequence_ids": [
+    "0004",
+    "0010",
+    "0015",
+    "0021",
+    "0025",
+    "0040",
+    "0048",
+    "0050"
+  ],
+  "known_previous_training_sequence_0042_kept_in_train": true,
+  "replacement_validation_sequence": "0050",
+  "prior_checkpoint_full_training_history_verified": false,
+  "source": "official TRAIN JSON only; no official TEST selection"
+}

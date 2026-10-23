@@ -1,0 +1,12 @@
+VLSOT source release staging — 2026-10-23
+Team: 望远队; registration confirmed.
+
+Publication-preparation copy. Public repository created: https://github.com/Teng10099/VLSOT-2026-Wangyuan. Full source push is planned; this local commit does not confirm remote publication. Platform submission/score: not recorded. No project-wide license has been assigned. Senior permission to compete, publish source and share weights is confirmed; exact holder/version/scope remains to record. Main framework upstream license clearance remains pending for adopted portions. Component license copies do not authorize the whole repository.
+
+Copied the audited 117-text-file whitelist from current WORK. Only this staging copy was edited. The source ZIP contains text/code/notices/fixed TRAIN split IDs; no raw competition data, labels, images, calibration, model binaries, prediction archives, registration form or personal phone/student ID. Runtime candidate files remain unchanged; legacy private paths and import-time random split writes were removed. Root legacy 160/30 lists are retained under legacy/splits, not used by current commands.
+
+README.md reproduces the paired full30 epoch-2 candidate using the external VLSOT_Wangyuan share pack with portable_config.yaml and byte-identical model/ONNX, validation first, then 300-frame TEST inference, then explicit initial_range_and_dimensions postprocessing. Internal validation means are diagnostic, not official APE/ACE/SR. ONNX numerical checks do not verify physical coordinate semantics or model quality.
+
+Before public release: complete actual main-source license mapping and choose a permitted project release license only for rights that are covered; verify the planned source push is accessible at the recorded repository URL and record its commit. The team-provided Baidu model share URL and extraction code are recorded in README.md and submission_docs/01_SUBMISSION_CHECKLIST.json; its expiry and remote file contents remain unverified. Verify all paired files and retain current evidence. Do not upload this package as if permission and platform scoring were already complete. No external upload or message was performed in preparing this copy.
+
+The retired diagnose_target_consistency.py no longer embeds a real TRAIN target or old prediction fixture. The camera-geometry unit test now uses explicitly synthetic coordinates/depth; core runtime geometry is unchanged.

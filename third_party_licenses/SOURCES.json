@@ -1,0 +1,70 @@
+{
+  "verified_date": "2026-10-23",
+  "source_type": "official primary upstream repository files; generic Apache text retained",
+  "not_a_project_wide_license": true,
+  "entries": [
+    {
+      "file": "Apache-2.0.txt",
+      "source_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "license_identifier": "Apache-2.0",
+      "scope": "Generic text, retained from prior source audit.",
+      "archived_text_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "MonoDETR-MIT.txt",
+      "source_url": "https://github.com/ZrrSkywalker/MonoDETR/blob/main/LICENSE.txt",
+      "license_identifier": "MIT",
+      "scope": "MonoDETR corresponding inherited parts only.",
+      "archived_text_sha256": "5d8aab7da8b9b4972ec3f4793bf968904557061bfc003e0d78e32f36306cf84a"
+    },
+    {
+      "file": "DETR-Apache-2.0.txt",
+      "source_url": "https://github.com/facebookresearch/detr/blob/main/LICENSE",
+      "license_identifier": "Apache-2.0",
+      "scope": "Corresponding DETR-derived code with original headers.",
+      "archived_text_sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+    },
+    {
+      "file": "Deformable-DETR-Apache-2.0.txt",
+      "source_url": "https://github.com/fundamentalvision/Deformable-DETR/blob/main/LICENSE",
+      "license_identifier": "Apache-2.0",
+      "scope": "Corresponding model/attention/CUDA source with original headers.",
+      "archived_text_sha256": "068413f8cf5e42e34d6e171e45a779df6dbea0a18249c0a223a3878e6de3cb27"
+    },
+    {
+      "file": "CaDDN-Apache-2.0.txt",
+      "source_url": "https://github.com/TRAILab/CaDDN/blob/master/LICENSE",
+      "license_identifier": "Apache-2.0",
+      "scope": "Corresponding depth loss and balancer code.",
+      "archived_text_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "file": "UniLM-MIT.txt",
+      "source_url": "https://github.com/microsoft/unilm/blob/master/LICENSE",
+      "license_identifier": "MIT",
+      "scope": "Corresponding Diff-Transformer source; modified locally.",
+      "archived_text_sha256": "b5cb7ff7859e7d282d98fc43ab081b0dda5dc659dc3385cf65740c759a7e6a6c"
+    },
+    {
+      "file": "FlashAttention-v2.3.6-BSD-3-Clause.txt",
+      "source_url": "https://github.com/Dao-AILab/flash-attention/blob/v2.3.6/LICENSE",
+      "license_identifier": "BSD-3-Clause",
+      "scope": "Corresponding Tri Dao rotary code; modified locally.",
+      "archived_text_sha256": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73"
+    },
+    {
+      "file": "FlashAttention-v2.3.6-AUTHORS.txt",
+      "source_url": "https://github.com/Dao-AILab/flash-attention/blob/v2.3.6/AUTHORS",
+      "license_identifier": "author notice",
+      "scope": "Author text referenced by BSD license.",
+      "archived_text_sha256": "b102042819a44c39dd7af31e8f29358db944bd6eb372459fba3529c2e0584523"
+    },
+    {
+      "file": "Kornia-v0.6.11-Apache-2.0.txt",
+      "source_url": "https://github.com/kornia/kornia/blob/v0.6.11/LICENSE",
+      "license_identifier": "Apache-2.0",
+      "scope": "Kornia focal/one_hot reference only; direct local provenance still to confirm.",
+      "archived_text_sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    }
+  ]
+}
