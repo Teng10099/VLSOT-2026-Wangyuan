@@ -215,5 +215,9 @@
       "purpose": "Apache 2.0 第4条的再分发、修改说明及版权/NOTICE保留条件。"
     }
   ],
-  "public_code_repository_url": "https://github.com/Teng10099/VLSOT-2026-Wangyuan"
+  "public_code_repository_url": "https://github.com/Teng10099/VLSOT-2026-Wangyuan",
+  "source_publication_status": "published_project_wide_license_basis_pending",
+  "first_public_source_commit": "dbe4a1b701842360da987aa493ea88d6d253f6f6",
+  "formal_vlp_result_submission_completed": false,
+  "official_platform_score": null
 }

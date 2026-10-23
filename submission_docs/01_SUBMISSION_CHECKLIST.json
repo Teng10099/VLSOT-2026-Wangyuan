@@ -1,15 +1,22 @@
 {
   "schema_version": 2,
   "updated_date": "2026-10-23",
-  "status": "local_publication_commit_prepared_source_push_pending_not_scored",
+  "status": "source_published_license_scope_pending_vlp_not_submitted_not_scored",
   "team_name": "望远队",
   "registration_confirmed": true,
   "links": {
     "public_code_repository_url": "https://github.com/Teng10099/VLSOT-2026-Wangyuan",
-    "code_commit_or_tag": null,
+    "code_commit_or_tag": "dbe4a1b701842360da987aa493ea88d6d253f6f6",
+    "code_commit_scope": "first published source commit; later documentation-only changes are tracked in Git history",
     "weights_share_url": "https://pan.baidu.com/s/1bVVBg2RImI3-x0BulhllCg?pwd=2qm4",
     "weights_extraction_code": "2qm4",
-    "weights_share_expires_date": null
+    "weights_share_expires_date": null,
+    "weights_share_expiry_display": "365天后",
+    "weights_share_time_display": "2026-10-23 19:17",
+    "weights_share_validity_days_displayed": 365,
+    "minimum_90_day_validity_verified_from_share_page": true,
+    "weights_remote_complete_download_verified": false,
+    "weights_remote_sha256_verified": false
   },
   "required_categories": [
     {
@@ -20,7 +27,7 @@
     },
     {
       "name": "public source repository",
-      "status": "public_repository_created_source_push_pending",
+      "status": "source_published_project_license_scope_pending",
       "required_hosts": [
         "GitHub",
         "Gitee"
@@ -31,11 +38,11 @@
         "BSD-3-Clause"
       ],
       "project_license_assigned": null,
-      "missing": "main-framework license scope and verified source publication commit"
+      "missing": "main-framework and project-wide license scope"
     },
     {
       "name": "weights share",
-      "status": "team_provided_share_link_recorded_expiry_and_remote_contents_unverified",
+      "status": "share_page_verified_365_day_validity_remote_contents_unverified",
       "max_size_gb": 20,
       "minimum_availability_days": 90,
       "must_include": [
@@ -45,7 +52,7 @@
         "model_official_v2.onnx",
         "verification/summary/share_manifest files"
       ],
-      "missing": "expiry and remote file content verification",
+      "missing": "complete independent download and remote file SHA256 verification",
       "local_share_zip": "望远队_VLSOT模型与ONNX.zip",
       "decompressed_root": "VLSOT_Wangyuan/",
       "portable_config_full300_raw_result_byte_identical": true
@@ -75,6 +82,7 @@
     "temporal_residual": true,
     "postprocess": "initial_range_and_dimensions",
     "official_platform_score": null,
+    "formal_vlp_result_submission_completed": false,
     "physical_coordinate_semantics_independently_verified": false
   },
   "internal_metrics_not_official": {
