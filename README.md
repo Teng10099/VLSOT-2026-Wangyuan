@@ -14,7 +14,9 @@
 - `01_prior_candidate/result.zip`：在原始输出上加入描述中的初始距离和尺寸；当前拟评审候选。
 - `05_验证记录/`：内部验证证据；不是官方评分。
 
-本源码 ZIP 不包含权重、ONNX、预测结果、数据、标定或 PPT，需另行取得对应包。分享包用 `share_manifest.json` 校验文件配对；原始审计目录另外保留 `artifact_manifest.json`，不能只凭文件名混用版本。主模型 SHA256 为 `2d66f572b50b69b05937761c6a3595e7e168dfccf278d86395435f909217ad10`，ONNX 为 `44ccbc8c89da96897f47be10a58531af6aa98fee3d587620d0250e8dbb2568e8`。
+固定提交快照的源码 ZIP 不包含权重、ONNX、预测结果、数据、标定或 PPT，需另行取得对应包。分享包用 `share_manifest.json` 校验文件配对；原始审计目录另外保留 `artifact_manifest.json`，不能只凭文件名混用版本。主模型 SHA256 为 `2d66f572b50b69b05937761c6a3595e7e168dfccf278d86395435f909217ad10`，ONNX 为 `44ccbc8c89da96897f47be10a58531af6aa98fee3d587620d0250e8dbb2568e8`。
+
+技术报告：[望远队 VLSOT 技术报告（PPTX，已署名，共 5 页）](reports/望远队_VLSOT技术报告_5页.pptx)。报告涵盖方法、贡献、实验与消融，供评审下载。
 
 ## 方法、贡献与边界
 
